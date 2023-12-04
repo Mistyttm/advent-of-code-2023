@@ -1,4 +1,5 @@
-let translateDocument = require("./day1").translateDocument;
+let day1 = require("./day1");
+let day2 = require("./day1partII");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -6,13 +7,18 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("What day would you like to run> ", function (answer) {
-    switch(parseInt(answer)){
+rl.question("What day would you like to run> ", function(answer) {
+    switch (parseInt(answer)) {
         case 1:
-            translateDocument("./data/day1.txt");
+            day1.translateDocument("./data/day1.txt");
+            break;
+        case 2:
+            day2.translateDocument("./data/day1partII.txt");
             break;
         default:
-            console.log(`Please respond with an integer between [1-25].\nERROR: ${answer}`);
+            console.log(
+                `Please respond with an integer between [1-25].\nINPUT ERROR: ${answer}`
+            );
             break;
     }
     rl.close();
