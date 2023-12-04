@@ -3,6 +3,6 @@
         "mocha": "^10.2.0"
     },
     "scripts": {
-        "tests": "mocha"
+        "test": "mocha"
     }
 }
