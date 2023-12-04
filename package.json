@@ -3,6 +3,7 @@
         "mocha": "^10.2.0"
     },
     "scripts": {
+        "check": "bun src/index.js",
         "test": "mocha"
     }
 }
