@@ -42,7 +42,6 @@ function translateDocument(file) {
     
     rl.on('close', () => {
         let result = 0;
-        console.log(temparray);
         for (const element of temparray) {
             result += element;
         }
