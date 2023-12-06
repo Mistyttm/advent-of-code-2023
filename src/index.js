@@ -11,9 +11,10 @@ rl.question("What day would you like to run> ", function(answer) {
     switch (parseInt(answer)) {
         case 1:
             day1.translateDocument("./data/day1.txt");
+            day2.translateDocument("./data/day1partII.txt");
             break;
         case 2:
-            day2.translateDocument("./data/day1partII.txt");
+            
             break;
         default:
             console.log(
