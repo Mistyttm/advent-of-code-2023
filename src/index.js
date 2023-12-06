@@ -1,5 +1,5 @@
-let day1 = require("./day1");
-let day2 = require("./day1partII");
+let day1 = require("./day1/day1");
+let day2 = require("./day1/day1partII");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -14,7 +14,6 @@ rl.question("What day would you like to run> ", function(answer) {
             day2.translateDocument("./data/day1partII.txt");
             break;
         case 2:
-            
             break;
         default:
             console.log(

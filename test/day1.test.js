@@ -1,6 +1,6 @@
 let assert = require("assert");
-let part1 = require("../src/day1");
-let part2 = require("../src/day1partII");
+let part1 = require("../src/day1/day1");
+let part2 = require("../src/day1/day1partII");
 
 describe("Day 1", function() {
     describe("Part 1", function() {
